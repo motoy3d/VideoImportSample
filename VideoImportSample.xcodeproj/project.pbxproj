@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC64ACE1CD91B79B022459FB /* Pods_VideoImportSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255ACE55C18B0D356AD9FCAF /* Pods_VideoImportSample.framework */; };
 		FDF7540C25D081F1008A27D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7540B25D081F1008A27D8 /* AppDelegate.swift */; };
 		FDF7540E25D081F1008A27D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7540D25D081F1008A27D8 /* SceneDelegate.swift */; };
 		FDF7541025D081F1008A27D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7540F25D081F1008A27D8 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		255ACE55C18B0D356AD9FCAF /* Pods_VideoImportSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoImportSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F67CC75B9901199ADBEF41D /* Pods-VideoImportSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoImportSample.release.xcconfig"; path = "Target Support Files/Pods-VideoImportSample/Pods-VideoImportSample.release.xcconfig"; sourceTree = "<group>"; };
+		C12159EC7CCC21346A2D2304 /* Pods-VideoImportSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoImportSample.debug.xcconfig"; path = "Target Support Files/Pods-VideoImportSample/Pods-VideoImportSample.debug.xcconfig"; sourceTree = "<group>"; };
 		FDF7540825D081F1008A27D8 /* VideoImportSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoImportSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF7540B25D081F1008A27D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF7540D25D081F1008A27D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC64ACE1CD91B79B022459FB /* Pods_VideoImportSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C8760D9B723B7E9A70D2D9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C12159EC7CCC21346A2D2304 /* Pods-VideoImportSample.debug.xcconfig */,
+				6F67CC75B9901199ADBEF41D /* Pods-VideoImportSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D6CC4F92DF9BBCC9F0E48F1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				255ACE55C18B0D356AD9FCAF /* Pods_VideoImportSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDF753FF25D081F1008A27D8 = {
 			isa = PBXGroup;
 			children = (
 				FDF7540A25D081F1008A27D8 /* VideoImportSample */,
 				FDF7540925D081F1008A27D8 /* Products */,
+				7C8760D9B723B7E9A70D2D9D /* Pods */,
+				D6CC4F92DF9BBCC9F0E48F1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF7541C25D081F4008A27D8 /* Build configuration list for PBXNativeTarget "VideoImportSample" */;
 			buildPhases = (
+				8B1B6F355EEE2EBDC584E1E8 /* [CP] Check Pods Manifest.lock */,
 				FDF7540425D081F1008A27D8 /* Sources */,
 				FDF7540525D081F1008A27D8 /* Frameworks */,
 				FDF7540625D081F1008A27D8 /* Resources */,
+				4022C0C206682E312CB7726E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4022C0C206682E312CB7726E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoImportSample/Pods-VideoImportSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoImportSample/Pods-VideoImportSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoImportSample/Pods-VideoImportSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B1B6F355EEE2EBDC584E1E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoImportSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDF7540425D081F1008A27D8 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		FDF7541D25D081F4008A27D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12159EC7CCC21346A2D2304 /* Pods-VideoImportSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		FDF7541E25D081F4008A27D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F67CC75B9901199ADBEF41D /* Pods-VideoImportSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
