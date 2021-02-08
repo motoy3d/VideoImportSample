@@ -1,10 +1,5 @@
 import UIKit
 import AVFoundation
-import AVKit
-import Photos
-import ReactorKit
-import RxCocoa
-import RxSwift
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   @IBOutlet weak var thumbnailImgView: UIImageView!

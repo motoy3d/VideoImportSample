@@ -6,11 +6,5 @@ target 'VideoImportSample' do
   use_frameworks!
 
   # Pods for VideoImportSample
-  # Architecture
-  pod 'ReactorKit', ‘2.0.1’
-  # Rx
-  pod 'RxSwift', ‘5.1.0’
-  pod 'RxCocoa', ‘5.1.0’
-
 
 end

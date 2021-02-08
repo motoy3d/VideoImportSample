@@ -103,7 +103,6 @@
 				FDF7540425D081F1008A27D8 /* Sources */,
 				FDF7540525D081F1008A27D8 /* Frameworks */,
 				FDF7540625D081F1008A27D8 /* Resources */,
-				4022C0C206682E312CB7726E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,23 +159,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4022C0C206682E312CB7726E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VideoImportSample/Pods-VideoImportSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VideoImportSample/Pods-VideoImportSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoImportSample/Pods-VideoImportSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8B1B6F355EEE2EBDC584E1E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
