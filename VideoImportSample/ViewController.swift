@@ -22,7 +22,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
     if let url = info[.mediaURL] as? URL {
       do {
-        print(url) // file:///private/var/mobile/Containers/Data/PluginKitPlugin/...となる（/Applicationではなく/PluginKitPlugin）
+        print(url) // file:///private/var/mobile/Containers/Data/PluginKitPlugin/...
         let asset = AVURLAsset(url: url, options: nil)
         let imgGenerator = AVAssetImageGenerator(asset: asset)
         imgGenerator.appliesPreferredTrackTransform = true
@@ -51,11 +51,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
 // https://stackoverflow.com/questions/9196443/how-to-remove-tmp-directory-files-of-an-ios-app
 extension FileManager {
-  // 動画選択後でもtmpDirectoryにファイルは存在しないのでクリアしても意味なさそう
   func clearTmpDirectory() {
     do {
       let tmpDirURL = FileManager.default.temporaryDirectory
-      print("tmpDirURL= \(tmpDirURL) ") // file:///private/var/mobile/Containers/Data/Application/....となる
+      print("tmpDirURL= \(tmpDirURL) ") // file:///private/var/mobile/Containers/Data/Application/....(not file:///private/var/mobile/Containers/Data/PluginKitPlugin)
       let tmpDirectory = try contentsOfDirectory(atPath: tmpDirURL.path)
       try tmpDirectory.forEach { file in
         let fileUrl = tmpDirURL.appendingPathComponent(file)
