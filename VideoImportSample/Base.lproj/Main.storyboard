@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiW-CI-O6E">
-                                <rect key="frame" x="126" y="532" width="162" height="51"/>
+                                <rect key="frame" x="121" y="532" width="173" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="動画を選択"/>
+                                <state key="normal" title="Select Video"/>
                                 <connections>
                                     <action selector="showVideoLibrary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMG-By-YUs"/>
                                 </connections>
@@ -31,10 +31,10 @@
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ci-bJ-ABX">
-                                <rect key="frame" x="115" y="653" width="184" height="36"/>
+                                <rect key="frame" x="139" y="653" width="137" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="一時ファイルを削除"/>
+                                <state key="normal" title="Delete tmp files"/>
                                 <connections>
                                     <action selector="clearTempFiles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3E-oC-T4Q"/>
                                 </connections>
